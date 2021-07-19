@@ -18,14 +18,14 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view('nom');
+    return view('pages.nom');
 })->name('nomz');
 
 Route::get('/prenom', function () {
-    return view('prenom');
+    return view('pages.prenom');
 })->name('prenomz');
 
 Route::get('/age', function () {
-    return view('age');
+    return view('pages.age');
 })->name('agez');
 
