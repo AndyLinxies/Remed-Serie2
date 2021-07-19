@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\AgeController;
+use App\Http\Controllers\NomController;
+use App\Http\Controllers\PrenomController;
+use App\Http\Controllers\Tab;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,15 +21,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('pages.nom');
-})->name('nomz');
+Route::get('/', [NomController::class,'index'])->name('nomz');
 
-Route::get('/prenom', function () {
-    return view('pages.prenom');
-})->name('prenomz');
+Route::get('/prenom', [PrenomController::class,'prenom'])->name('prenomz');
 
-Route::get('/age', function () {
-    return view('pages.age');
-})->name('agez');
+Route::get('/age', [AgeController::class,'age'])->name('agez');
+
+Route::get('/tableau', [Tab::class,'tableau']);
+
+
 

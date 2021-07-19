@@ -28,6 +28,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('agez') }}">Age & Colors</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tableau">Tableau</a>
+                    </li>
 
                 </ul>
             </div>
